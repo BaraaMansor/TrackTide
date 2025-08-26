@@ -111,7 +111,7 @@ function App() {
                 )}
                 <button
                   onClick={() => setFilter(key as typeof filter)}
-                  className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                  className={`relative cursor-pointer px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
                     filter === key
                       ? 'bg-white/10 backdrop-blur-md border border-blue-400/40 text-white shadow-xl shadow-blue-500/20'
                       : 'bg-white/5 backdrop-blur-sm border border-white/10 text-slate-300 hover:bg-white/10 hover:border-white/20 hover:text-white'
@@ -202,7 +202,7 @@ function App() {
               <div className="absolute inset-0 bg-gradient-to-r from-slate-500/20 to-slate-600/20 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
               <button
                 onClick={() => setFilter('all')}
-                className="relative px-6 py-3 bg-white/5 backdrop-blur-md border border-white/10 text-slate-300 rounded-xl hover:bg-white/10 hover:border-white/20 hover:text-white transition-all duration-300 font-medium shadow-xl"
+                className="relative cursor-pointer px-6 py-3 bg-white/5 backdrop-blur-md border border-white/10 text-slate-300 rounded-xl hover:bg-white/10 hover:border-white/20 hover:text-white transition-all duration-300 font-medium shadow-xl"
               >
                 Show All Habits
               </button>
@@ -211,7 +211,7 @@ function App() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-blue-600/30 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
               <button
                 onClick={() => setShowAddForm(true)}
-                className="relative px-6 py-3 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-xl hover:bg-white/15 hover:border-blue-400/40 transition-all duration-300 font-medium shadow-xl hover:shadow-blue-500/20"
+                className="relative cursor-pointer px-6 py-3 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-xl hover:bg-white/15 hover:border-blue-400/40 transition-all duration-300 font-medium shadow-xl hover:shadow-blue-500/20"
               >
                 Add New Habit
               </button>
